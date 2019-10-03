@@ -65,7 +65,7 @@ C. Usage of this software:
    Usage: DEMFIlterRef {inputfolder} {outputfolder} {1 | 2| 3}
    
    
-  inputfolder: location of the Parent folder of the tile folder(64G_E81_N21)
+  inputfolder: location of the Parent folder of the tile folder (e.g., 64G_E81_N21)
   output folder: It must have read/write permission.It must be different from the inputfolder.
   {1|2|3}: option 1 for Proposed method; 2 for average method ;3 for conventional feathering-based blend method.
    This software is compiled and executed in Microsoft visual studio 2010.
