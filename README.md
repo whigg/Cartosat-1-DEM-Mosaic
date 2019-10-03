@@ -43,10 +43,16 @@ The complete software with source code is provided in the folder "DEMOverlap_mos
 3) SIPS (Satellite Image Processing System - It reads the tiff into binary form along with the required meta-data population)
 
 All the three mosaic methods use "gdal_translate" command to crop the mosaic output to an ROI extent.
+
+
+
 B. Folder sturcture of input and output data  
    Input files must be placed in the folder that denotes a tile, e.g., 64G_E81_N21
    The file name of an input DEM scene has the following naming convention:
      P5008536_1P_20061202_556295, where P5 represents Sensor name followed by 6-digit orbit number,1P represents the payload code follwoed by date in YYYYMMDD format; followed by path(3-digit) and row(3-digit);
+     
+     
+     
 C. Usage of this software
    Create a c++ source project using IDE (e.g., Microsoft visual studio, Netbeans)
    Load the .sln file (solution file) from the IDE. Include the paths of the header files and the lib files in the configuration. First build the DEMFilterLib.cpp to generate DEMFilterLib.lib and use this lib as dependency while building DEMFIlterRef.cpp. 
