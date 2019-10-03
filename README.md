@@ -62,7 +62,7 @@ C. Usage of this software:
    Software can be executed through command prompt also, apart from the IDE, as mentioned below:
    
    
-   Usage: DEMFIlterRef <<inputfolder>> <<outputfolder>> {1 | 2| 3}
+   Usage: DEMFIlterRef {inputfolder} {outputfolder} {1 | 2| 3}
   inputfolder: location of the Parent folder of the tile folder(64G_E81_N21)
   output folder: It must have read/write permission.It must be different from the inputfolder.
   {1|2|3}: option 1 for Proposed method; 2 for average method ;3 for conventional feathering-based blend method.
