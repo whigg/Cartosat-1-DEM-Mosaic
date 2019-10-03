@@ -27,7 +27,7 @@ Kandi, Sangareddy - 502285, Telangana (State), India.
 
 Instructions to use this software:
 
-A.Software with source code:
+A. Software with source code:
 
 The complete software with source code is provided in the folder "DEMOverlap_mosaic". It consists of THREE sub-folders, namely,
 
