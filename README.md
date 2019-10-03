@@ -5,8 +5,8 @@ Title of the manuscript: A novel framework for seamless mosaic of Cartosat-1 DEM
 
 Author details:
 
-1. Rajeshreddy Datla
-Scientist-SE
+1. Rajeshreddy Datla,
+Scientist-SE,
 Signal processing division, 
 Advanced Data Processing Research Institute (ADRIN), 
 Indian Space Research Organization (ISRO),
@@ -17,8 +17,8 @@ Manovikas Nagar, Secunderabad 500009, India
 Telephone number:+919704143731
 E-mail:rajesh@adrin.res.in
 
-2. Dr. C Krishna Mohan
-Professor
+2. Dr. C Krishna Mohan,
+Professor,
 Room No. 103, Block - A
 Department of Computer Science and Engineering
 Indian Institute of Technology Hyderabad
@@ -57,6 +57,8 @@ C. Usage of this software:
    Create a c++ source project using IDE (e.g., Microsoft visual studio, Netbeans)
    Load the .sln file (solution file) from the IDE. Include the paths of the header files and the lib files in the configuration. First build the DEMFilterLib.cpp to generate DEMFilterLib.lib and use this lib as dependency while building DEMFIlterRef.cpp. 
    The two files are supposed to get generated are: DEMFilterLib.lib and DEMFIlterRef.exe ,after building the corresponding source cpp files.
+   
+   
    Software can be executed through command prompt also, apart from the IDE, as mentioned below:
    Usage: DEMFIlterRef <inputfolder> <outputfolder> {1 | 2| 3}
   inputfolder: location of the Parent folder of the tile folder(64G_E81_N21)
