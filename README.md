@@ -50,13 +50,14 @@ B. Folder sturcture of input and output data:
    Input files must be placed in the folder that denotes a tile, e.g., 64G_E81_N21
    The file name of an input DEM scene has the following naming convention:
      P5008536_1P_20061202_556295, where P5 represents Sensor name followed by 6-digit orbit number,1P represents the payload code follwoed by date in YYYYMMDD format; followed by path(3-digit) and row(3-digit);
-     
+     Sample input and output files are located in the Testdata.zip and Mosaic_Output_Files.zip, respectivley.
+     The format of the input are in Geotiff and the output files created from the mosaic process are also saved in Geotiff. The output files provided in Mosaic_Output_Files.zip are in the png format to have glimpse of outputs.     
      
      
 C. Usage of this software:
    Create a c++ source project using IDE (e.g., Microsoft visual studio, Netbeans)
-   Load the .sln file (solution file) from the IDE. Include the paths of the header files and the lib files in the configuration. First build the DEMFilterLib.cpp to generate DEMFilterLib.lib and use this lib as dependency while building DEMFIlterRef.cpp. 
-   The two files are supposed to get generated are: DEMFilterLib.lib and DEMFIlterRef.exe ,after building the corresponding source cpp files.
+   Load the .sln file (solution file) from the IDE.  First build the DEMFilterLib.cpp to generate DEMFilterLib.lib and use this lib as dependency while building DEMFIlterRef.cpp. 
+   The two files are supposed to get generated are: DEMFilterLib.lib and DEMFIlterRef.exe ,after building the corresponding source cpp files. Include the paths of the header files and the lib files (DEMFilterLib.lib and SipsNew.lib) in the configuration.
    
    
    Software can be executed through command prompt also, apart from the IDE, as mentioned below:
