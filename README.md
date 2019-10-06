@@ -42,7 +42,7 @@ The complete software with source code is provided in the folder "DEMOverlap_mos
 2) DEMFIlterRef (It has function to invoke the mosaic methods)
 3) SIPS (Satellite Image Processing System - It reads the tiff into binary form along with the required meta-data population)
 
-All the three mosaic methods use "gdal_translate" command to crop the mosaic output to an ROI extent.
+All the three mosaic methods use "gdal_translate" command to crop the mosaic output to an ROI extent. In this work, ROI extent is 1 degree x 1 degree (i.e., 110x 110 sq.km approximately).
 
 
 
