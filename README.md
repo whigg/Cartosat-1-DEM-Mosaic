@@ -31,7 +31,8 @@ A. Software with source code:
 
 The complete software with source code is provided in the folder "DEMOverlap_mosaic". It consists of THREE sub-folders, namely,
 
-1) DEMFilterLib: It contains separate functions for the DEM mosaic, namely, Mosaic_Average, Mosaic_Conventional, and Mosaic_Proposed, corresponding to average method, feathering-based blend method and Proposed method, respectively. 
+1) DEMFilterLib: It contains separate functions for the DEM mosaic, namely, Mosaic_Average, Mosaic_Conventional, and Mosaic_Proposed, that correspond to average method, feathering-based blend method and Proposed method, respectively.
+
 	1.1) Mosaic_Average function: It creates an virtual grid based on the extents of the input DEM scenes and assigns the elevation value to each cell of 		     the grid, by computing the average of the elevation values in the overlapping regions wherever a cell contains more than one elevation value. 		     Finally, gdal_translate is used to crop the result to ROI extent.
 
  	1.2) Mosaic_Conventional function: It is basically feathering-based blend method. This method considers two inputs at a time for the mosaic, according 			to its nature of the methodology (scalability property). It collects all the input DEM scene filenames in a list and iterates by cascading the 			output generated from the first two inputs with the third input for the	mosaic process. Then, considering the resulted output with fourth 			input for the mosaic and so on. It computes the overlapping region and the valid-data(non-NODATA) cells along the scan and pixel direction for 			every iteration. It derives a weighting mechanism based on the number of valid-data cells and uses these weights in the mosaic process to 			compute a new elevation value. It does not use meta-data of the input scenes. 
